@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cnal7q5om3i2j"]
 
-[ext_resource type="Texture2D" uid="uid://qs1hrsjky844" path="res://Art/Kasaya's Frames/Bars/2/hp  background.png" id="1_4lw5x"]
-[ext_resource type="Texture2D" uid="uid://c85euee5buq23" path="res://Art/Kasaya's Frames/Bars/2/hp.png" id="2_ih8aa"]
+[ext_resource type="Texture2D" uid="uid://qs1hrsjky844" path="res://Art/Imports/Kasaya's Frames/Bars/2/hp  background.png" id="1_4lw5x"]
+[ext_resource type="Texture2D" uid="uid://c85euee5buq23" path="res://Art/Imports/Kasaya's Frames/Bars/2/hp.png" id="2_ih8aa"]
 [ext_resource type="Script" path="res://Scripts/health_bar.gd" id="3_td7uy"]
 
 [node name="health_bar" type="TextureProgressBar"]

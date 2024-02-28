@@ -1,8 +1,8 @@
 [gd_scene load_steps=50 format=3 uid="uid://be8skmr42nmay"]
 
-[ext_resource type="Texture2D" uid="uid://dh60jyhlijwjx" path="res://Art/AstronautSS.png" id="1_dxomw"]
+[ext_resource type="Texture2D" uid="uid://dh60jyhlijwjx" path="res://GameAssets/AstronautSS.png" id="1_dxomw"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_uco2s"]
-[ext_resource type="Texture2D" uid="uid://c1xi06bhvm1eb" path="res://Art/B05066_08_01.png" id="2_d8gfq"]
+[ext_resource type="Texture2D" uid="uid://c1xi06bhvm1eb" path="res://GameAssets/B05066_08_01.png" id="2_d8gfq"]
 [ext_resource type="PackedScene" uid="uid://cnal7q5om3i2j" path="res://Scenes/health_bar.tscn" id="4_82d1i"]
 [ext_resource type="PackedScene" uid="uid://upeym8iciksd" path="res://Scenes/held_item.tscn" id="5_orkh3"]
 
@@ -365,7 +365,7 @@ script = ExtResource("1_uco2s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wg12w")
-animation = &"e-idle"
+animation = &"e-walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_vk2r8")

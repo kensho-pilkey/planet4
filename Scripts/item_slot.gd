@@ -67,6 +67,6 @@ func _on_button_down():
 
 func _process(_delta):
 	if get_parent().get_parent().active_slot == slot_num:
-		$frame.texture = load("res://Art/slot1_selected.png")
+		$frame.texture = load("res://GameAssets/slot1_selected.png")
 	else:
-		$frame.texture = load("res://Art/Kasaya's Frames/Inventory & chests/1/slot1.png")
+		$frame.texture = load("res://GameAssets/slot1.png")

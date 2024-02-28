@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://biohlb2t7tfql"]
 
 [ext_resource type="Script" path="res://Scripts/inventory.gd" id="1_q4r1d"]
-[ext_resource type="Texture2D" uid="uid://dap4gu2lj576h" path="res://Art/Kasaya's Frames/Inventory & chests/1/dialogues1.png" id="2_3no7d"]
+[ext_resource type="Texture2D" uid="uid://dap4gu2lj576h" path="res://Art/dialogues1.png" id="2_3no7d"]
 
 [node name="inventory_ui" type="Control"]
 layout_mode = 3

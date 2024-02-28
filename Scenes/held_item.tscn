@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://upeym8iciksd"]
 
-[ext_resource type="Texture2D" uid="uid://diuiceymaejgm" path="res://Art/dsword.png" id="1_852b8"]
+[ext_resource type="Texture2D" uid="uid://diuiceymaejgm" path="res://GameAssets/dsword.png" id="1_852b8"]
 [ext_resource type="Script" path="res://Scenes/holdable.gd" id="1_qkcuy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_udiht"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bcbwqhanoh5ax"]
 
-[ext_resource type="Texture2D" uid="uid://bgt13veco58ht" path="res://Art/colony.png" id="1_qq4f8"]
+[ext_resource type="Texture2D" uid="uid://bgt13veco58ht" path="res://GameAssets/colony.png" id="1_qq4f8"]
 [ext_resource type="PackedScene" uid="uid://be8skmr42nmay" path="res://Scenes/player.tscn" id="2_u3u0u"]
 [ext_resource type="Script" path="res://Scripts/E_spawner.gd" id="3_yw15s"]
 [ext_resource type="PackedScene" uid="uid://biohlb2t7tfql" path="res://Scenes/inventory_ui.tscn" id="5_58y6a"]
@@ -67,7 +67,6 @@ position = Vector2(5, -15)
 scale = Vector2(0.5, 0.5)
 
 [node name="inventory_ui" parent="player" instance=ExtResource("5_58y6a")]
-visible = false
 offset_left = -588.0
 offset_top = -252.0
 offset_right = 612.0
