@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://dxwapntskihco"]
+
+[ext_resource type="Texture2D" uid="uid://bbirl52jmflj0" path="res://Art/coin.png" id="1_uaywk"]
+[ext_resource type="Script" path="res://Scripts/Resource.gd" id="2_qdw51"]
+
+[resource]
+script = ExtResource("2_qdw51")
+item_id = "2"
+name = "coin"
+description = ""
+quantity = 0
+icon = ExtResource("1_uaywk")

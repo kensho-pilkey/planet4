@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://mea5fr7li436"]
+
+[ext_resource type="Texture2D" uid="uid://cxqyli5gwg4gt" path="res://Art/Kasaya's Frames/Inventory & chests/1/slot1.png" id="1_j48un"]
+[ext_resource type="Script" path="res://Scripts/item_slot.gd" id="1_u884j"]
+[ext_resource type="Script" path="res://Scripts/item.gd" id="3_nrmy5"]
+
+[node name="item-slot" type="Button"]
+offset_right = 75.0
+offset_bottom = 75.0
+script = ExtResource("1_u884j")
+
+[node name="frame" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 75.0
+offset_bottom = 75.0
+texture = ExtResource("1_j48un")
+
+[node name="item" type="Sprite2D" parent="frame"]
+position = Vector2(40, 37)
+script = ExtResource("3_nrmy5")
+
+[node name="item_num" type="Label" parent="frame"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 47.0
+offset_right = 69.0
+offset_bottom = 70.0
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
