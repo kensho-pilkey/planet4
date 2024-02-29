@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://rd2m57pjdai2"]
+
+[ext_resource type="Script" path="res://World.gd" id="1"]
+[ext_resource type="Script" path="res://DemoPlayer.gd" id="2"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(41.9534, 39.737)
+
+[node name="World" type="Node2D"]
+script = ExtResource("1")
+player_path = NodePath("Player")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+z_index = 2
+position = Vector2(440.023, 247.69)
+script = ExtResource("2")
+
+[node name="Box" type="CollisionShape2D" parent="Player"]
+shape = SubResource("1")
+debug_color = Color(1, 1, 1, 1)
+
+[node name="Cam" type="Camera2D" parent="Player"]
