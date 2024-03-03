@@ -1,23 +1,26 @@
 extends Node2D
 
+
 var chunk_coords = Vector2()
 var chunk_data = []
-var colors #0
+
 
 func start(_chunk_coords):
 	chunk_coords = _chunk_coords
 	$Coords.text = str(chunk_coords)
+	
+	#Checks if chunk is saved in WorldSave singleton 
 	if WorldSave.loaded_coords.find(_chunk_coords) == -1:
-		color()
+		
+		var noise = FastNoiseLite.new()
+		noise.seed = randi()
+		
+		$chunk_tiles.generate(noise)
 		WorldSave.add_chunk(chunk_coords)
+		chunk_data.append(noise)
 	else:
 		chunk_data = WorldSave.retrive_data(chunk_coords)
-		modulate = chunk_data[0]
-
-func color():
-	colors = Color(randf_range(0.3, 1), randf_range(0.3, 1), randf_range(0.3, 1))
-	modulate = colors
-	chunk_data.append(colors)
+		$chunk_tiles.generate(chunk_data[0])
 
 func save():
 	WorldSave.save_chunk(chunk_coords, chunk_data)

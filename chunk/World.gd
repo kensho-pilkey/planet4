@@ -11,8 +11,8 @@ var player
 #The render distance in the max length and bredth of chunks that can be loaded.
 #the chunk size is the size of the chunk obviously.
 #current chunk stores the current chunk the player is in.
-@export var render_distance: int = 7
-@export var chunk_size: float = 80
+@export var render_distance: int = 4
+@export var chunk_size: float = 256
 var current_chunk = Vector2()
 var previous_chunk = Vector2()
 var chunk_loaded = false
@@ -35,6 +35,7 @@ func _ready():
 #Checks if the player is in a new chunk every frame
 func _process(_delta):
 	current_chunk = _get_player_chunk(player.global_position)
+	#print(str(current_chunk))
 	if previous_chunk != current_chunk:
 		if !chunk_loaded:
 			load_chunk()
